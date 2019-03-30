@@ -44,7 +44,7 @@
   @include border-radius(4px);
 }
 .icon{
-margin-top:30px; 
+margin-top:40px; 
   img{
     width:80px;
     @include border-radius(8px);
@@ -65,7 +65,7 @@ margin-top:30px;
   @include border-radius(10px);
 }
 .sidebarAbout{
-  min-height:$min-height - 5vh;
+  min-height:$min-height - 3vh;
   @include childStyles;
   @include border-radius(10px);
 }

@@ -10591,7 +10591,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .icon {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .icon img {
@@ -10635,7 +10635,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .sidebarAbout {
-  min-height: 39vh;
+  min-height: 41vh;
   background: #f3f2f2;
   margin: 15px 0px;
   padding: 10px;
