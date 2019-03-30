@@ -1,124 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myPortfolio">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
     <link rel="stylesheet" href="stylesheet/style.css">
+
+    <title>Kabita's Portfolio</title>
 </head>
 
 <body>
     <div class="container">
-
-        <header>
-            <nav id="mainNav" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Kabita Chongbang</a>
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class=" nav-link" href="#"> Home</a></li>
-                    <li class="nav-item"><a class=" nav-link" href="#"> About</a></li>
-                    <li class="nav-item"><a class=" nav-link" href="#"> Contact</a></li>
+        <header class="header">
+            <nav class="navbar navigator navbar-expand-md bg-dark navbar-dark ">
+                <a class="navbar-brand" href="#!/">Kabita Chongbang</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item "><a class="nav-link" href="#!/about">About
+                            Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!/contact">contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!/projects">Skills & Experience</a></li>
                 </ul>
-                <form class="btn-group ">
-                    <input id="inputSearch" class="form-control " type="text" placeholder="Search..">
-                    <button class="btn bg-secondary">Search</button>
-                </form>
+
+                <form class="form-inline ml-auto">
+                    <input class="form-control" type="search" placeholder="search..">
+                    <button class="btn  btn-outline-secondary btn-light" type="button">Search </button></form>
             </nav>
         </header>
-        <main>
+
+        <div ng-view></div>
+
+        <footer class="footer  text-center text-white">
             <div>
-                <img src="/image/image1.jpg">
+                <strong>Topics</strong>
+                <ul class="list-unstyled">
+                    <li><a href="https://css-tricks.com/quick-whats-the-difference-between-flexbox-and-grid/"> What's
+                            the Difference Between Flexbox and Grid?</a> </li>
+                    <li><a href="https://angular-ui.github.io/">AngularUI for AngularJS</a></li>
+                    <li> <a href="https://www.w3schools.com/bootstrap/bootstrap_grid_examples.asp"> bootstrap grid
+                            example</a>
+                    </li>
+                </ul>
             </div>
-            <aside class="sidebar">
-                <h2>About Me!</h2><br>
-                <p>I'm from Nepal,living in H.K. past 5years. Things I like about H.K. are variety of foods,easy
-                    access
-                    to work,market,reliable means of transportation.
-                    <blockquote>I love cooking when I'm bored.</blockquote>
-                    I enjoy reading things from online sources.
-                    I like going for camping when H.K. weather is good.</p>
-                <blockquote>hello everyone!!</blockquote>
-
-            </aside>
-
-            <section class="mainContent">
-                <h3>Fruits</h3>
-                <p>My favourite fruit is a pear.I like all fruits.My favourite fruit is a pear.I like all fruits.My
-                    favourite fruit is a pear.I like all fruits.My favourite fruit is a pear.I like all fruits.My
-                    favourite
-                    fruit is a pear.I like all fruits.My favourite fruit is a pear.I like all fruits.My favourite
-                    fruit
-                    is a
-                    pear.I like all fruits.My favourite fruit is a pear.I like all fruits.My favourite fruit is a
-                    pear.I
-                    like all fruits.My favourite fruit is a pear.I like all fruits.My favourite fruit is a pear.I
-                    like
-                    all
-                    fruits.</p>
-            </section>
-            <section class="mainContent">
-                <h2>hello,this is it</h2>
-            </section>
-            <section class="mainContent">
-                <h2>hello,this is it</h2>
-                <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iusto placeat eum? Distinctio
-                    sapiente
-                    saepe vel excepturi nesciunt deserunt tempora, cum, culpa ratione beatae fuga inventore aliquam
-                    unde, nihil nemo!</em>
-            </section>
-            <section class="mainContent">
-                <h3>look at here</h3>
-            </section>
-            <section class="mainContent">
-                <h2>hello,this is it</h2>
-                <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iusto placeat eum? Distinctio
-                    sapiente
-                    saepe vel excepturi nesciunt deserunt tempora, cum, culpa ratione beatae fuga inventore aliquam
-                    unde, nihil nemo!</em>
-            </section>
-            <section class="mainContent">
-                <h3>look at here</h3>
-            </section>
-            <section class="mainContent">
-                <h2>hello,this is it</h2>
-                <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iusto placeat eum? Distinctio
-                    sapiente
-                    saepe vel excepturi nesciunt deserunt tempora, cum, culpa ratione beatae fuga inventore aliquam
-                    unde, nihil nemo!</em>
-            </section>
-            <section class="mainContent">
-                <h3>look at here</h3>
-            </section>
-            <section class="mainContent">
-                <h3>look at here</h3>
-            </section>
-
-        </main>
-        <div class="clear"></div>
-        <footer class="bottomFooter ">
-            <br>
-            <div class="headingFooter">EXPERT
-                <div class="subHeadingFooter">TOPICS
-                    <ul class="listFooter">
-                        <li>Web Programming</li>
-                        <li>JavaScript Help</li>
-                        <li>AngularJS Expert Help
-                    </ul>
+            <div>
+                <div>
+                    contact us : abc@gmail.com
                 </div>
-            </div>
-            <div class="headingFooter"> LEARNING CENTER
-                <div class="subHeadingFooter">TOPICS
-                    <ul class="listFooter">
-                        <li>Learn AngularJS Online</li>
-                        <li>Learn JavaScript Online</li>
-                        <li>Learn SQL Database Online</li>
-                    </ul>
-                </div>
-            </div>
         </footer>
     </div>
+
+
+    <script src="app/route.js"></script>
 </body>
 
 </html>

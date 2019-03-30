@@ -1,9 +1,10 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
+    "angular": "^1.7.8",
+    "angular-route": "^1.7.8",
     "bootstrap": "^4.3.1"
   },
   "devDependencies": {},
@@ -19,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/kabitachongbang/kabitachongbang.github.io/issues"
   },
-  "homepage": "https://github.com/kabitachongbang/kabitachongbang.github.io#readme"
+  "homepage": "https://github.com/kabitachongbang/kabitachongbang.github.io#readme",
+  "description": ""
 }
