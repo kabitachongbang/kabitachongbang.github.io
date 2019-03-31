@@ -10,12 +10,13 @@
 
 @mixin wrapperStyles{
   width:$primaryWidth;
-  min-height:$min-height;
   display:flex ;
   justify-content:space-between;
   
 }
 @mixin childStyles{
+            text-align:center;
+            color:$color-link;
             background:$primary-color;
             margin: $primary-margin;
             padding: $primary-padding;
@@ -23,14 +24,18 @@
 
 @mixin links{
                 a{
-                  color:$primary-color;
-                  &:visited{color: darken($primary-color,30%);}
-                  &:hover{color: lighten($primary-color, 20%); }
-                  &:active{color:$primary-color};
+                  &:link{
+                    color:yellowgreen;
+                    
+                  }
+                  &:visited{color: darken($primary-color,40%);}
+                  &:hover{color: lighten($color-link, 20%); }
+                  
                 }
                 h3{text-align: center;
                    text-transform:capitalize;    
                 }
+
             }
 @mixin border-radius($radius){
   border-radius:$radius;
@@ -38,13 +43,13 @@
 
 *{
   font: lighter 18px / 25px sans-serif;
-  @include links;     
+    
 }
-.contentImage img{
+.aboutImage img{
   @include border-radius(4px);
 }
 .icon{
-margin-top:40px; 
+  margin:30px; 
   img{
     width:80px;
     @include border-radius(8px);
@@ -55,19 +60,27 @@ margin-top:40px;
 .sidebarWrapper{width:$primaryWidth - 70%;}
 .contentWrapper{width:$primaryWidth - 31%;}
 .sidebarBig{
-  min-height:$min-height - 3vh;
+  max-height:$primary-height+6vh;
   @include childStyles;
   @include border-radius(10px);
 }
 .sidebar { 
-  min-height: $min-height - 24vh;
+  min-height: $primary-height - 24vh;
   @include childStyles;
   @include border-radius(10px);
 }
-.sidebarAbout{
-  min-height:$min-height - 3vh;
+ .sidebarAbout{
+  min-height:$primary-height - 3vh;
   @include childStyles;
   @include border-radius(10px);
+} 
+.sidebarBig{
+  img{
+     height:38vh;
+
+    @include border-radius(14px);
+
+  }
 }
 .contentBig{
   @extend .sidebarBig ;
@@ -75,14 +88,31 @@ margin-top:40px;
 .content {
    @extend .sidebar;
 }
+@mixin nav-link-color{
+    a{
+         &:link{ color:$primary-color; }
+          &:visited{color:lighten(rgb(9, 159, 170),40%);}
+          &:hover{ color:$primary-color;}
+          &:active{ color:$primary-color; }
+        }
+  }
 .navigator{
+  @include nav-link-color;
+}
+.navbar{
   @include border-radius(5px);
+  background:#343A40;
 }
 .footer {
 margin-top:auto;
+padding:$padding;
 background:#343A40;
 color:$primary-color;
 @include border-radius(5px);
+@include links;
+ .footer-list{
+   padding:$padding;
+ }
 }
 
 
