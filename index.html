@@ -12,34 +12,30 @@
     <title>Kabita's Portfolio</title>
 </head>
 
-<body>
+<body ng-controller="MainController">
     <div class="container">
         <header class="header">
-            <nav class="navbar navigator navbar-expand-md bg-dark navbar-dark ">
-                <a class="navbar-brand" href="#!/">Kabita Chongbang</a>
-                <ul class="navbar-nav">
+            <nav class="navbar  navbar-expand-md ">
+                <a class="navbar-brand text-white" href="#!/">Kabita Chongbang</a>
+                <ul class="navbar-nav navigator ml-auto">
                     <li class="nav-item "><a class="nav-link" href="#!/about">About
                             Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#!/contact">contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="#!/projects">Skills & Experience</a></li>
                 </ul>
-
-                <form class="form-inline ml-auto">
-                    <input class="form-control" type="search" placeholder="search..">
-                    <button class="btn  btn-outline-secondary btn-light" type="button">Search </button></form>
             </nav>
         </header>
 
         <div ng-view></div>
 
-        <footer class="footer  text-center text-white">
+        <footer class="footer d-flex justify-content-around  text-white">
             <div>
-                <strong>Topics</strong>
-                <ul class="list-unstyled">
-                    <li><a href="https://css-tricks.com/quick-whats-the-difference-between-flexbox-and-grid/"> What's
+                Topics
+                <ul class="footer-list list-unstyled">
+                    <li><a href=""> What's
                             the Difference Between Flexbox and Grid?</a> </li>
-                    <li><a href="https://angular-ui.github.io/">AngularUI for AngularJS</a></li>
-                    <li> <a href="https://www.w3schools.com/bootstrap/bootstrap_grid_examples.asp"> bootstrap grid
+                    <li><a href="">AngularUI for AngularJS</a></li>
+                    <li> <a href=""> bootstrap grid
                             example</a>
                     </li>
                 </ul>
@@ -52,7 +48,8 @@
     </div>
 
 
-    <script src="app/route.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controller/index.js"></script>
 </body>
 
 </html>

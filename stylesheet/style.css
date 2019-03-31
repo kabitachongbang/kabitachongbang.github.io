@@ -10565,33 +10565,12 @@ a.text-dark:hover, a.text-dark:focus {
   font: lighter 18px / 25px sans-serif;
 }
 
-* a {
-  color: #f3f2f2;
-}
-
-* a:visited {
-  color: #aaa2a2;
-}
-
-* a:hover {
-  color: white;
-}
-
-* a:active {
-  color: #f3f2f2;
-}
-
-* h3 {
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.contentImage img {
+.aboutImage img {
   border-radius: 4px;
 }
 
 .icon {
-  margin-top: 40px;
+  margin: 30px;
 }
 
 .icon img {
@@ -10601,7 +10580,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .wrapper {
   width: 100%;
-  min-height: 44vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10619,16 +10597,25 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .sidebarBig, .contentBig {
-  min-height: 41vh;
-  background: #f3f2f2;
+  min-height: 44vh;
+  text-align: center;
+  color: #17A2B8;
+  background: #dddfe0;
   margin: 15px 0px;
   padding: 10px;
   border-radius: 10px;
 }
 
-.sidebar, .content {
+.sidebarBig img, .contentBig img {
+  height: 42vh;
+  border-radius: 14px;
+}
+
+.sidebar, .content, .contentProject {
   min-height: 20vh;
-  background: #f3f2f2;
+  text-align: center;
+  color: #17A2B8;
+  background: #dddfe0;
   margin: 15px 0px;
   padding: 10px;
   border-radius: 10px;
@@ -10636,20 +10623,65 @@ a.text-dark:hover, a.text-dark:focus {
 
 .sidebarAbout {
   min-height: 41vh;
-  background: #f3f2f2;
+  text-align: center;
+  color: #17A2B8;
+  background: #dddfe0;
   margin: 15px 0px;
   padding: 10px;
   border-radius: 10px;
 }
 
-.navigator {
+.contentProject {
+  min-height: 17vh;
+}
+
+.navigator a:link {
+  color: #dddfe0;
+}
+
+.navigator a:visited {
+  color: #86f1f9;
+}
+
+.navigator a:hover {
+  color: #dddfe0;
+}
+
+.navigator a:active {
+  color: #dddfe0;
+}
+
+.navbar {
   border-radius: 5px;
+  background: #343A40;
 }
 
 .footer {
   margin-top: auto;
+  padding: 10px;
   background: #343A40;
-  color: #f3f2f2;
+  color: #dddfe0;
   border-radius: 5px;
+}
+
+.footer a:link {
+  color: yellowgreen;
+}
+
+.footer a:visited {
+  color: #737a7e;
+}
+
+.footer a:hover {
+  color: #4cd3e9;
+}
+
+.footer h3 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.footer .footer-list {
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
