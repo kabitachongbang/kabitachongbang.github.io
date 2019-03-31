@@ -14,10 +14,4 @@ angular.module('myPortfolio').config(function ($routeProvider) {
         .when('/projects', {
             templateUrl: 'app/view/projects.html',
         })
-
-
-
-
-
-
 });
