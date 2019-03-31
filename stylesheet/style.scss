@@ -48,14 +48,7 @@
 .aboutImage img{
   @include border-radius(4px);
 }
-.icon{
-  margin:30px; 
-  img{
-    width:80px;
-    @include border-radius(8px);
-
-  }
-}
+ 
 .wrapper{@include wrapperStyles;}
 .sidebarWrapper{width:$primaryWidth - 70%;}
 .contentWrapper{width:$primaryWidth - 31%;}
@@ -74,9 +67,16 @@
   @include border-radius(10px);
 }
  .sidebarAbout{
-  min-height:$primary-height - 3vh;
   @include childStyles;
   @include border-radius(10px);
+      .icon{
+          margin:24px; 
+            img{
+            width:80px;
+            @include border-radius(8px);
+
+          } 
+        }
 } 
 
 .contentBig{
@@ -84,10 +84,11 @@
 }
 .content {
    @extend .sidebar;
+   
 }
 .contentProject{
   @extend .sidebar;
-  min-height:17vh;
+  min-height:21vh;
 }
 @mixin nav-link-color{
     a{

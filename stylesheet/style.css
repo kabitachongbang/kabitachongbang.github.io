@@ -10569,15 +10569,6 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 4px;
 }
 
-.icon {
-  margin: 30px;
-}
-
-.icon img {
-  width: 80px;
-  border-radius: 8px;
-}
-
 .wrapper {
   width: 100%;
   display: -webkit-box;
@@ -10622,7 +10613,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .sidebarAbout {
-  min-height: 41vh;
   text-align: center;
   color: #17A2B8;
   background: #dddfe0;
@@ -10631,8 +10621,17 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 10px;
 }
 
+.sidebarAbout .icon {
+  margin: 24px;
+}
+
+.sidebarAbout .icon img {
+  width: 80px;
+  border-radius: 8px;
+}
+
 .contentProject {
-  min-height: 17vh;
+  min-height: 21vh;
 }
 
 .navigator a:link {
