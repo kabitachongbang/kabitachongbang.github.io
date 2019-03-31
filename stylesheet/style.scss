@@ -60,9 +60,13 @@
 .sidebarWrapper{width:$primaryWidth - 70%;}
 .contentWrapper{width:$primaryWidth - 31%;}
 .sidebarBig{
-  max-height:$primary-height+6vh;
+  min-height:$primary-height;
   @include childStyles;
   @include border-radius(10px);
+    img{
+      height:42vh;
+    @include border-radius(14px);
+}
 }
 .sidebar { 
   min-height: $primary-height - 24vh;
@@ -74,19 +78,16 @@
   @include childStyles;
   @include border-radius(10px);
 } 
-.sidebarBig{
-  img{
-     height:38vh;
 
-    @include border-radius(14px);
-
-  }
-}
 .contentBig{
   @extend .sidebarBig ;
 }
 .content {
    @extend .sidebar;
+}
+.contentProject{
+  @extend .sidebar;
+  min-height:17vh;
 }
 @mixin nav-link-color{
     a{
