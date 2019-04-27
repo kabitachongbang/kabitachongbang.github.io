@@ -32,10 +32,6 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest('./app/'));
 });
 
-function defaultTask() {
-    // return gulp.series('sass', 'libs', 'scripts');
-}
-
-gulp.task('develop', gulp.series('sass', 'libs', 'scripts'));
+gulp.task('build', gulp.series('sass', 'libs', 'scripts'));
 
 exports.default = defaultTask;
