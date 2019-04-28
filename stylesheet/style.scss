@@ -1,122 +1,130 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+@import "_variables";
 
-@import '_variables' ;
-
-
-
-
-
-@mixin wrapperStyles{
-  width:$primaryWidth;
-  display:flex ;
-  justify-content:space-between;
-  
-}
-@mixin childStyles{
-            text-align:center;
-            color:$color-link;
-            background:$primary-color;
-            margin: $primary-margin;
-            padding: $primary-padding;
-            }
-
-@mixin links{
-                a{
-                  &:link{
-                    color:yellowgreen;
-                    
-                  }
-                  &:visited{color: darken($primary-color,40%);}
-                  &:hover{color: lighten($color-link, 20%); }
-                  
-                }
-                h3{text-align: center;
-                   text-transform:capitalize;    
-                }
-
-            }
-@mixin border-radius($radius){
-  border-radius:$radius;
+body {
+  color: $primary-color;
+  padding: $padding;
+  /* font: lighter 18px / 25px sans-serif;
+ */
 }
 
-*{
-  font: lighter 18px / 25px sans-serif;
-    
+/* @mixin wrapperStyles {
+  width: $primaryWidth;
+  display: flex;
+  justify-content: space-between;
 }
-.aboutImage img{
+@mixin childStyles {
+  text-align: center;
+  color: $color-link;
+  background: $primary-color;
+  margin: $primary-margin;
+  padding: $primary-padding;
+}
+ */
+@mixin links {
+  a {
+    &:link {
+      color: yellowgreen;
+    }
+    &:visited {
+      color: darken($primary-color, 40%);
+    }
+    &:hover {
+      color: lighten($color-link, 20%);
+    }
+  }
+  h3 {
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+/* 
+.aboutImage img {
   @include border-radius(4px);
 }
- 
-.wrapper{@include wrapperStyles;}
-.sidebarWrapper{width:$primaryWidth - 70%;}
-.contentWrapper{width:$primaryWidth - 31%;}
-.sidebarBig{
-  min-height:$primary-height;
+
+.wrapper {
+  @include wrapperStyles;
+}
+.sidebarWrapper {
+  width: $primaryWidth - 70%;
+}
+.contentWrapper {
+  width: $primaryWidth - 31%;
+}
+.sidebarBig {
+  min-height: $primary-height;
   @include childStyles;
   @include border-radius(10px);
-    img{
-      height:42vh;
+  img {
+    height: 42vh;
     @include border-radius(14px);
+  }
 }
-}
-.sidebar { 
+.sidebar {
   min-height: $primary-height - 24vh;
   @include childStyles;
   @include border-radius(10px);
 }
- .sidebarAbout{
+.sidebarAbout {
   @include childStyles;
   @include border-radius(10px);
-      .icon{
-          margin:24px; 
-            img{
-            width:80px;
-            @include border-radius(8px);
+  .icon {
+    margin: 24px;
+    img {
+      width: 80px;
+      @include border-radius(8px);
+    }
+  }
+}
 
-          } 
-        }
-} 
-
-.contentBig{
-  @extend .sidebarBig ;
+.contentBig {
+  @extend .sidebarBig;
 }
 .content {
-   @extend .sidebar;
-   
-}
-.contentProject{
   @extend .sidebar;
-  min-height:21vh;
 }
-@mixin nav-link-color{
-    a{
-         &:link{ color:$primary-color; }
-          &:visited{color:lighten(rgb(9, 159, 170),40%);}
-          &:hover{ color:$primary-color;}
-          &:active{ color:$primary-color; }
-        }
+.contentProject {
+  @extend .sidebar;
+  min-height: 21vh;
+} */
+
+@mixin nav-link-color {
+  a {
+    &:link {
+      color: $primary-color;
+    }
+    &:visited {
+      color: lighten(rgb(9, 159, 170), 40%);
+    }
+    &:hover {
+      color: $primary-color;
+    }
+    &:active {
+      color: $primary-color;
+    }
   }
-.navigator{
+}
+.navigator {
   @include nav-link-color;
 }
-.navbar{
+.navbar {
   @include border-radius(5px);
-  background:#343A40;
+  background: #343a40;
 }
 .footer {
-margin-top:auto;
-padding:$padding;
-background:#343A40;
-color:$primary-color;
-@include border-radius(5px);
-@include links;
- .footer-list{
-   padding:$padding;
- }
+  margin-top: auto;
+  padding: $padding;
+  background: #343a40;
+  color: $primary-color;
+  @include border-radius(5px);
+  @include links;
+  .footer-list {
+    padding: $padding;
+  }
 }
-
-
-
-
-
