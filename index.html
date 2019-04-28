@@ -1,53 +1,77 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myPortfolio">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="lib/lib.js"></script>
-    <link rel="stylesheet" href="stylesheet/css/style.css">
+    <link rel="stylesheet" href="stylesheet/css/style.css" />
 
     <title>Kabita's Portfolio</title>
-</head>
+  </head>
 
-<body ng-controller="MainController">
+  <body class="bg-dark p-0" ng-controller="MainController">
     <div class="container">
-        <header class="header">
-            <nav class="navbar  navbar-expand-md ">
-                <a class="navbar-brand text-white" href="#!/">Kabita Chongbang</a>
-                <ul class="navbar-nav navigator ml-auto">
-                    <li class="nav-item "><a class="nav-link" href="#!/about">About
-                            Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!/contact">contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!/projects">Skills & Experience</a></li>
-                </ul>
-            </nav>
-        </header>
+      <header class="header">
+        <nav class="navbar  navbar-expand-md ">
+          <div>
+            <a class="navbar-brand text-white" href="#!/">Kabita Chongbang </a>
+            <p class="small" style="color:rgb(221, 223, 224)">
+              JavaScript Front End Developer.
+            </p>
+          </div>
 
-        <div ng-view></div>
+          <ul class="navbar-nav navigator ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="#!/about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!/contact">contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!/projects">Skills & Experience</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <footer class="footer d-flex justify-content-around  text-white">
-            <div>
-                Topics
-                <ul class="footer-list list-unstyled">
-                    <li><a href=""> What's
-                            the Difference Between Flexbox and Grid?</a> </li>
-                    <li><a href="">AngularUI for AngularJS</a></li>
-                    <li> <a href=""> bootstrap grid
-                            example</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <div>
-                    contact us : abc@gmail.com
-                </div>
-        </footer>
+      <!-- <div ng-view></div> -->
+      <main class="d-flex text-white" style="min-height: 80vh">
+        <div class="col col-md-3 ">
+          <h1>Hello!</h1>
+          <h2>I'm Kabita.</h2>
+          <blockquote>I'm self learner.</blockquote>
+          <blockquote>I've developed few apps.</blockquote>
+          <p>
+            I aspire to be front end developer. I've been learning on my own. I
+            chose JavaScript platform as it allow us to make full fledged app
+            easily.
+          </p>
+          <br />
+          <p>Things I know:</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark">
+              JavaScript
+            </li>
+            <li class="list-group-item  bg-dark">Bootstrap</li>
+            <li class="list-group-item  bg-dark">HTML5,CSS3,SCSS</li>
+            <li class="list-group-item  bg-dark">MongoDb</li>
+          </ul>
+        </div>
+
+        <div class="col col-md-9"></div>
+      </main>
+
+      <footer
+        class="footer d-flex justify-content-around  text-white  col col-md-12"
+      >
+        <a href="https://kabitachongbang.github.io"
+          >kabitachongbang.github.io</a
+        >
+      </footer>
     </div>
 
     <script src="app/app.js"></script>
     <script src="app/controller/index.js"></script>
-</body>
-
+  </body>
 </html>
