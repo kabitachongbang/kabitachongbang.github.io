@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myPortfolio">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="lib/lib.js"></script>
+
     <link rel="stylesheet" href="stylesheet/css/style.css" />
 
     <title>Kabita's Portfolio</title>
   </head>
 
-  <body class="bg-dark p-0" ng-controller="MainController">
+  <body class="bg-dark p-0">
     <div class="container">
       <header class="header">
         <nav class="navbar  navbar-expand-md ">
@@ -20,32 +20,17 @@
               JavaScript Front End Developer.
             </p>
           </div>
-
-          <ul class="navbar-nav navigator ml-auto">
-            <li class="nav-item ">
-              <a class="nav-link" href="#!/about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!/contact">contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!/projects">Skills & Experience</a>
-            </li>
-          </ul>
         </nav>
       </header>
-
-      <!-- <div ng-view></div> -->
       <main class="d-flex text-white" style="min-height: 80vh">
-        <div class="col col-md-3 ">
+        <div class="col col-md-3 col-sm-3">
           <h1>Hello!</h1>
           <h2>I'm Kabita.</h2>
           <blockquote>I'm self learner.</blockquote>
           <blockquote>I've developed few apps.</blockquote>
           <p>
-            I aspire to be front end developer. I've been learning on my own. I
-            chose JavaScript platform as it allow us to make full fledged app
-            easily.
+            I aspire to be front end developer. I chose JavaScript platform as
+            it allow us to make full fledged app easily.
           </p>
           <br />
           <p>Things I know:</p>
@@ -56,25 +41,29 @@
             <li class="list-group-item  bg-dark">Bootstrap</li>
             <li class="list-group-item  bg-dark">HTML5,CSS3,SCSS</li>
             <li class="list-group-item  bg-dark">MongoDb</li>
+            <li class="list-group-item bg-dark">AngularJS</li>
           </ul>
         </div>
 
-        <div class="col col-md-9">
-          <div class="clearfix d-flex flex-wrap">
-            <div class="p-2">
-              <a href="https://kabita-student-enrollment.herokuapp.com/">
-                <img src="/image/studentSystem.PNG" style="width:400px" />
-              </a>
-            </div>
-
+        <div class="col col-md-9 col-sm-3">
+          <div class="d-flex flex-wrap">
             <div class="p-2">
               <a href="https://kabita-notes.herokuapp.com/">
-                <img src="image/notes.PNG" style="width:400px" />
+                <img src="image/notes.PNG" style="width:360px;height:300px" />
               </a>
             </div>
             <div class="p-2">
               <a href="https://kabita-todo.herokuapp.com/">
-                <img src="/image/todo.PNG" style="width:400px" />
+                <img src="/image/todo.PNG" style="width:400px;height:300px" />
+              </a>
+            </div>
+
+            <div class=" p-2 ml-5">
+              <a href="https://kabita-student-enrollment.herokuapp.com/">
+                <img
+                  src="/image/studentSystem.PNG"
+                  style="width:100%;height:100%"
+                />
               </a>
             </div>
 
@@ -89,6 +78,9 @@
         <a href="https://kabitachongbang.github.io"
           >kabitachongbang.github.io</a
         >
+        <a href="https://www.linkedin.com/in/kabitachongbang">
+          <img src="/image/LIicon.png" style="width:40px;height:40px" />
+        </a>
       </footer>
     </div>
 
